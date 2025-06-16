@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/PROJETO PVO/PARTE3-LOGIN/CSS/style.css">
+  <script src="JS/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Conecte-se</h1>
+    <form id="loginForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" placeholder="Senha" required>
+
+      <label for="turmaSelect">Selecione sua turma:</label>
+      <select id="turmaSelect" name="turmaSelect" required>
+        <option value="">Selecione</option>
+        <option value="100">100</option>
+        <option value="101">101</option>
+        <option value="102">102</option>
+        <option value="200 ADM">200 ADM</option>
+        <option value="201 ADM">201 ADM</option>
+        <option value="200 REDES">200 REDES</option>
+        <option value="200 INFORMATICA">200 INFORMATICA</option>
+        <option value="300 CHL">300 CHL</option>
+        <option value="300 SEA">300 SEA</option>
+        <option value="300 CNS">300 CNS</option>
+      </select>
+
+      <label class="remember-label">
+        <input type="checkbox" id="rememberMe" name="rememberMe">
+        Lembrar-me
+      </label>
+
+      <p style="font-size:0.95em; color:#555; margin-top:10px;">
+        Ao fazer login, você concorda com nossos
+        <a href="terms.html">Termos de Serviço</a> e
+        <a href="privacy.html">Política de Privacidade</a>.
+      </p>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div class="links">
+      <a href="/PARTE2-REGISTRO/register.html">Criar conta</a> |
+      <a href="reset-password.html">Esqueci minha senha</a>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;     
+   
+}
+
+body {
+    background-image: url("../SRC/IMG/fundo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* Container principal */
+
+
+
+.container {
+    max-width: 1550px;
+      min-height: 100vh;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inicio {
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
+    /* border: 2px solid rgb(0, 255, 13); */
+    border-radius: 15px;
+    width: 50rem;
+    height: 55rem;
+    margin-top: 68px;
+    margin-bottom: 72px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 106px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome {
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.welcome p {
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    font-size: 1.56rem;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+
+#btn {
+    width: 26.81rem;
+    text-decoration: none;
+    height: 4.68rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #5173b3;
+    font-size: 1.75rem;
+    font-weight: 500;
+    border: none;
+    color: white;
+    transition: 0.20s ease-in-out;
+}
+
+#btn:hover {
+    background-color: #062498;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.521);
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 58px;
+}
+
+#h1 {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.instructions {
+    font-size: 1.30rem; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 23px;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 970px) {
+    .inicio {
+        width: 50rem;
+        height: 55rem;
+    }
+}
+
+@media (max-width: 815px) {
+    .inicio {
+        width: 40rem;
+        height: 55rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .inicio {
+        width: 36rem;
+        height: 50rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.80rem;
+    }
+    
+    .welcome p {
+        font-size: 1.30rem;
+    }
+    
+    .logo img{
+        height: auto;
+        width: 9rem;
+    }
+     
+    #btn {
+        width: 25rem;
+        height: 4.20rem;
+        font-size: 1.50rem;
+    }
+
+    #p2, #p3 {
+        font-size: 1.10rem;
+    }
+}
+
+@media (max-width: 585px) {
+    .inicio {
+        width: 30rem;
+        height: 45rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.50rem;
+    }
+    
+    .welcome p {
+        font-size: 1.10rem;
+    }
+
+    .logo {
+        margin-top: 50px;
+    }
+    
+    .logo img{
+        height: auto;
+        width: 8rem;
+    }
+     
+    #btn {
+        width: 20rem;
+        height: 4rem;
+        font-size: 1.20rem;
+    }
+    
+    
+    #p2, #p3 {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .inicio {
+        width: 23rem;
+        height: 37rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.40rem;
+    }
+    
+    .welcome p {
+        font-size: 1rem;
+    }
+    
+    .logo img{
+        height: auto;
+        width: 7rem;
+    }
+    
+    .login-button {
+        margin-top: 30px;
+    }
+
+    hr {
+        margin-top: 30px;
+    }
+     
+    #btn {
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.03rem;
+    }
+
+    .instructions {
+        gap: 5px;
+    }
+    #p2, #p3 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .inicio {
+        width: 23rem;
+        height: 35rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.40rem;
+    }
+    
+    .welcome p {
+        font-size: 1rem;
+    }
+    
+    .logo img{
+        height: auto;
+        width: 7rem;
+    }
+     
+    #btn {
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.03rem;
+    }
+
+    .instructions {
+        gap: 5px;
+    }
+    #p2, #p3 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .inicio {
+        width: 20rem;
+        height: 30rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.10rem;
+    }
+    
+    .welcome p {
+        font-size: 0.80rem;
+    }
+    
+    .logo img{
+        height: auto;
+        width: 4rem;
+    }
+
+    .login-button {
+        margin-top: 20px;
+    }
+
+    hr {
+        margin-top: 25px;
+    }
+     
+    #btn {
+        width: 13rem;
+        height: 2.2rem;
+        font-size: 0.75rem;
+    }
+
+    .instructions {
+        gap: 5px;
+    }
+    #p2, #p3 {
+        font-size: 0.78rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .inicio {
+        width: 18rem;
+        height: 28rem;
+    }
+
+    .welcome h1 {
+        font-size: 1.10rem;
+    }
+    
+    .welcome p {
+        font-size: 0.80rem;
+    }
+    
+    .logo img{
+        height: auto;
+        width: 4rem;
+    }
+
+    .login-button {
+        margin-top: 20px;
+    }
+
+    hr {
+        margin-top: 25px;
+    }
+     
+    #btn {
+        width: 13rem;
+        height: 2.2rem;
+        font-size: 0.75rem;
+    }
+
+    .instructions {
+        gap: 5px;
+    }
+    #p2, #p3 {
+        font-size: 0.78rem;
+    }
+}
+
+@media (max-width: 305px) {
+    .inicio {
+        width: 16rem;
+        height: 24rem;
+    }
+
+    .welcome h1 {
+        font-size: 0.95rem;
+    }
+    
+    .welcome p {
+        font-size: 0.60rem;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+    
+    .logo img{
+        height: auto;
+        width: 4rem;
+    }
+
+    .login-button {
+        margin-top: 20px;
+    }
+
+    hr {
+        margin-top: 25px;
+    }
+     
+    #btn {
+        width: 10rem;
+        height: 2rem;
+        font-size: 0.65rem;
+    }
+
+    .instructions {
+        gap: 5px;
+    }
+    #p2, #p3 {
+        font-size: 0.60rem;
+    }
+}
